@@ -13,11 +13,15 @@ code {
 }
 
 // Override default variables before the import
-$h5-font-size: 1rem;
+$h5-font-size: 0.75rem;
+
+.pointer{
+  cursor:pointer;
+}
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
 
 // Import Modules & Components
 @import './App.scss';
-@import './card/sCard';
+@import './components/quiz/card/sCard';

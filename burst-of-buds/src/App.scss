@@ -35,3 +35,15 @@
     transform: rotate(360deg);
   }
 }
+
+.Header{
+  &__Wrapper{
+    position:relative;
+    width: 100%;
+  }
+  &__Question{
+    position: absolute;
+    top:0;
+    right: 20px;
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "questions": [
+        {
+            "question": "Die Knospen und Zweige sind:",
+            "answers": [
+                {
+                    "text": "gegenständig",
+                    "picture": "./assets/frage1/knospe_gegen.png"
+                },
+                {
+                    "text": "kreuzgegenständig",
+                    "picture": "./assets/frage1/knospe_kreuzgegen.png"
+                },
+                {
+                    "text": "schraubig",
+                    "picture": "./assets/frage1/knospe_schraubig.png"
+                },
+                {
+                    "text": "zweizeilig",
+                    "picture": "./assets/frage1/knospe_zweizeilig.png"
+                }
+            ]
+        },
+        {
+            "question": "Die Knospen:",
+            "answers": [
+                {
+                    "text": "stehen einzeln",
+                    "picture": "./assets/frage1/knospe_gegen.png"
+                },
+                {
+                    "text": "haben Beiknospen",
+                    "picture": "./assets/frage1/knospe_kreuzgegen.png"
+                }
+            ]
+        }
+    ]
+}
