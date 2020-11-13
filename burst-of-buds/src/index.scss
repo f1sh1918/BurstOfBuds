@@ -13,10 +13,11 @@ code {
 }
 
 // Override default variables before the import
-$body-bg: #000;
+$h5-font-size: 1rem;
 
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
 
-// Import Modules
+// Import Modules & Components
 @import './App.scss';
+@import './card/sCard';

@@ -1,27 +1,32 @@
-import React from 'react';
-import { Button } from "react-bootstrap";
-import logo from './logo.svg';
+import React from "react";
+import { Button, Container } from "react-bootstrap";
+import { SCard } from "./card";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <Button variant="primary">Primary</Button>
-      </header>
-    </div>
-  );
+interface IAppProps {
+}
+
+class IAppState {
+}
+
+class App extends React.Component<IAppProps, IAppState> {
+    public render() {
+        return (
+            <div className="App">
+                <Container>
+
+                <header className="App-header">
+                    <div>Burst of Buds</div>
+                </header>
+                <main>
+                    <div className={"SCard__Wrapper"}>
+                    <SCard/>
+                    </div>
+                    <Button variant="primary">Primary</Button>
+                </main>
+                </Container>
+            </div>
+        );
+    }
 }
 
 export default App;
