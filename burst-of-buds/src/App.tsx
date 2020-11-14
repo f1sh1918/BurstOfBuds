@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import { IoMdRefresh } from "react-icons/io";
 
 import { Quiz } from "./components/quiz";
 import { ResultCard } from "./components/results/resultCard";
@@ -47,15 +48,27 @@ class App extends React.Component<IAppProps, IAppState> {
         const plantsFiltered = this.state.results.map((plant: any) => {
             let count = 0;
             plant.answers.forEach((answer: any, index: number) => {
-                const multiple = answer.includes("|") ? answer.split("|",2) : null;
+                const multiple = answer.includes("|") ? answer.split("|", 2) : null;
                 if (answer === this.state.questions[index].answer || (multiple?.includes(this.state.questions[index].answer))) {
                     count = count + 1;
                 }
             });
-            return { ...plant, percent: Math.round((count / plant.answers.filter((el:string) =>el!=="").length) * 100) / 100 };
-        }).sort((a, b) => b.percent - a.percent);
+            return {
+                ...plant,
+                percent: Math.round((count / plant.answers.filter((el: string) => el !== "").length) * 100) / 100,
+                count: count
+            };
+        }).sort((a, b) => b.count - a.count).sort((a, b) => b.percent - a.percent);
 
         this.setState({ results: plantsFiltered });
+    };
+
+    restart = (): void => {
+        this.setState({
+            activeQuestion: 0,
+            showResult: false
+        });
+
     };
 
     public render() {
@@ -65,6 +78,7 @@ class App extends React.Component<IAppProps, IAppState> {
                 <Container>
                     <header className="App-header">
                         <div className={"Header__Wrapper p-2"}>
+                            <span><IoMdRefresh className={"Header__Icon-Restart"} onClick={() => this.restart()} /></span>
                             <span>Burst of Buds</span>
                             <span className={"Header__Question py-2"}>
                                 {`Frage: ${activeQuestion + 1}/${questions.length}`}
@@ -91,11 +105,12 @@ class App extends React.Component<IAppProps, IAppState> {
                                     <div><strong>Ergebnisse:</strong></div>
                                     <div className={"SCard__Wrapper"}>
 
-                                        {this.state.results.map((result: any,index:number) => {
-                                            return index<5 && <ResultCard
+                                        {this.state.results.map((result: any, index: number) => {
+                                            return index < 40 && <ResultCard
                                                 picture={result.picture}
                                                 name={result.name}
                                                 percent={result.percent}
+                                                count={result.count}
                                                 info={result?.info}
                                             />;
                                         })}</div>

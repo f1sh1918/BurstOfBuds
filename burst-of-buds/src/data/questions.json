@@ -31,7 +31,7 @@
             "answers": [
                 {
                     "text": "Stacheln",
-                    "picture": "./assets/fragen/3_dornen.png"
+                    "picture": "./assets/fragen/3_stacheln.png"
                 },
                 {
                     "text": "Dornen",
@@ -152,6 +152,26 @@
                 },
                 {
                     "text": "weiß"
+                }
+            ]
+        },
+        {
+            "question": "Welche Farbe hat die Rinde:",
+            "answers": [
+                {
+                    "text": "schwarz"
+                },
+                {
+                    "text": "weiß"
+                },
+                {
+                    "text": "grau"
+                },
+                {
+                    "text": "braun"
+                },
+                {
+                    "text": "rot"
                 }
             ]
         }

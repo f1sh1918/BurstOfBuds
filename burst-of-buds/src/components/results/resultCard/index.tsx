@@ -9,6 +9,7 @@ interface IResultCardProps {
     picture: string;
     percent: number;
     info?: any;
+    count: number;
 }
 
 export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => {
@@ -34,7 +35,7 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
                 <Card.Title>{props.name}</Card.Title>
                 <div className={"CircularProgressbar__Wrapper"}>
 
-                    <CircularProgressbar value={props.percent} maxValue={1} text={`${props.percent * 100}%`} styles={buildStyles({
+                   <div> <CircularProgressbar value={props.percent} maxValue={1} text={`${props.percent * 100}%`} styles={buildStyles({
                         // Rotation of path and trail, in number of turns (0-1)
                         rotation: 0.25,
 
@@ -55,7 +56,8 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
                         textColor: "black",
                         trailColor: "#d6d6d6",
                         backgroundColor: "#3e98c7",
-                    })} />
+                    })} /></div>
+                    <div>{props.count}</div>
                 </div>
             </Card.Body>
         </Card>

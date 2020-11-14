@@ -391,7 +391,8 @@
                 "sitzend",
                 "",
                 "",
-                "braun"
+                "braun",
+                "weiß|grau|braun"
             ],
             "picture": "./assets/plants/plant_zitterpappel.png",
             "info": "Knospen nicht filzig behaart<br>Seitenknospen anliegend<br>Knospenschuppen glänzend <br>Rinde weißlich bis graubraun"
@@ -407,7 +408,8 @@
                 "sitzend",
                 "",
                 "",
-                "braun"
+                "braun",
+                "braun|rot"
             ],
             "picture": "./assets/plants/plant_traubenkirsche.png",
             "info": "Knospen nicht filzig behaart<br>Seitenknospen anliegend<br>Knospenschuppen glänzend <br>Rinde braunrot"
@@ -486,7 +488,8 @@
                 "",
                 "<0,5",
                 "",
-                ""
+                "",
+                "schwarz"
             ],
             "picture": "./assets/plants/plant_schlehe.png",
             "info": "Knospen und Zweige wechselständig<br>Knospen nicht in den Achseln von Dornen<br>Knospen stark büschelig gehäuft<br>halbkugelig<br>Rinde schwärzlich"
@@ -502,10 +505,62 @@
                 "",
                 "<0,5",
                 "",
-                ""
+                "",
+                "weiß|grau"
             ],
             "picture": "./assets/plants/plant_weissdorn.png",
             "info": "Knospen und Zweige wechselständig<br>Knospen nicht in den Achseln von Dornen<br>Knospen stark büschelig gehäuft<br>kugelig bis eiförmig<br>Rinde weißgrau"
+        },
+        {
+            "name": "Kornelkirsche",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "",
+                "1 Schuppe|2 Schuppen",
+                "gelb|braun",
+                ""
+            ],
+            "picture": "./assets/plants/plant_kornelkirsche.png",
+            "info": "Knospen unterschiedlich<br>Blattknospen: zungenförmig<br>Blütenknospen: kugelig"
+        },
+        {
+            "name": "Gemeiner Schneeball",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "",
+                "1 Schuppe|2 Schuppen",
+                "rot",
+                ""
+            ],
+            "picture": "./assets/plants/plant_gemeiner_schneeball.png",
+            "info": "Alle Knospen gleich, rötlich glänzend"
+        },
+        {
+            "name": "Faulbaum",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Dornen",
+                "schraubig",
+                "",
+                "",
+                "",
+                "keine Schuppen",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_gemeiner_schneeball.png",
+            "info": "Alle Knospen gleich, rötlich glänzend"
         }
     ]
 }

@@ -47,6 +47,15 @@
         top: 0;
         right: 15px;
     }
+    &__Icon {
+        &-Restart{
+            position:absolute;
+            top:5px;
+            left: 10px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    }
 }
 
 @include media-breakpoint-down(md) {
