@@ -2,7 +2,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 import { Quiz } from "./components/quiz";
-import { SCard } from "./components/quiz/card";
 import { ResultCard } from "./components/results/resultCard";
 import quizData from "./data/questions.json";
 import plantData from "./data/plants.json";
@@ -47,13 +46,13 @@ class App extends React.Component<IAppProps, IAppState> {
     checkResult = (): void => {
         const plantsFiltered = this.state.results.map((plant: any) => {
             let count = 0;
-            console.log(plant);
             plant.answers.forEach((answer: any, index: number) => {
-                if (answer === this.state.questions[index].answer) {
+                const multiple = answer.includes("|") ? answer.split("|",2) : null;
+                if (answer === this.state.questions[index].answer || (multiple?.includes(this.state.questions[index].answer))) {
                     count = count + 1;
                 }
             });
-            return { ...plant, percent: Math.round((count / plant.answers.length) * 100) / 100 };
+            return { ...plant, percent: Math.round((count / plant.answers.filter((el:string) =>el!=="").length) * 100) / 100 };
         }).sort((a, b) => b.percent - a.percent);
 
         this.setState({ results: plantsFiltered });
@@ -92,12 +91,12 @@ class App extends React.Component<IAppProps, IAppState> {
                                     <div><strong>Ergebnisse:</strong></div>
                                     <div className={"SCard__Wrapper"}>
 
-                                        {this.state.results.map((result: any) => {
-                                            return <ResultCard
+                                        {this.state.results.map((result: any,index:number) => {
+                                            return index<5 && <ResultCard
                                                 picture={result.picture}
                                                 name={result.name}
                                                 percent={result.percent}
-                                                info={result.info}
+                                                info={result?.info}
                                             />;
                                         })}</div>
                                 </div>

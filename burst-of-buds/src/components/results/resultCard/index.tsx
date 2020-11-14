@@ -15,12 +15,25 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
     console.log("percent", props.percent);
     const [showModal, setShowModal] = useState(false);
 
+    const getColor =(percent:number):string =>{
+        switch(true){
+            case percent < 25: return 'red';
+            case percent >= 25 && percent < 50: return 'orange';
+            case percent >= 50 && percent < 75: return '#fcba03';
+            case percent >= 75 : return 'green';
+            default: return "";
+
+        }
+
+    }
+
     const card = (
         <Card className={"SCard pointer"} onClick={() => setShowModal(true)}>
             {props.picture && <Card.Img className={"SCard__Image p-2"} variant="top" src={props.picture} />}
             <Card.Body className={"p-2"}>
                 <Card.Title>{props.name}</Card.Title>
                 <div className={"CircularProgressbar__Wrapper"}>
+
                     <CircularProgressbar value={props.percent} maxValue={1} text={`${props.percent * 100}%`} styles={buildStyles({
                         // Rotation of path and trail, in number of turns (0-1)
                         rotation: 0.25,
@@ -38,8 +51,8 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
                         // pathTransition: 'none',
 
                         // Colors
-                        pathColor: `rgba(62, 152, 199, ${props.percent})`,
-                        textColor: "#f88",
+                        pathColor: getColor(props.percent*100),
+                        textColor: "black",
                         trailColor: "#d6d6d6",
                         backgroundColor: "#3e98c7",
                     })} />
@@ -55,9 +68,14 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
             </Modal.Header>
             <Modal.Body>
                 <Image className="w-100 ResultCard__Image" src={props.picture} rounded />
-                <strong>
+                {props.info&& <div className={"ResultCard__Merkmale"}>
+                    <div className={"ResultCard__Merkmale-Header text-center"}>
+                        <strong> Merkmale:   </strong>
+                    </div>
+
                     <p className={"text-center"} dangerouslySetInnerHTML={{ __html: props.info }} />
-                </strong>
+
+                </div> }
             </Modal.Body>
         </Modal>
     );

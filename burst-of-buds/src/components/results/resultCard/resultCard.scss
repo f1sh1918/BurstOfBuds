@@ -1,5 +1,4 @@
 .CircularProgressbar{
-
     &__Wrapper {
         max-width: 2.5rem;
         margin: 0 auto;
@@ -9,4 +8,11 @@
     &__Image{
         max-height: 70vh;
     }
+}
+
+@include media-breakpoint-down(md) {
+    .modal-dialog {
+        margin: 0;
+    }
+
 }

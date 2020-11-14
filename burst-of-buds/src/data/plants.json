@@ -3,13 +3,12 @@
         {
             "name": "Brombeere",
             "answers": [
-                    "Strauch",
+                "Strauch",
                 "Keine Kätzchen",
                 "Stacheln"
             ],
-            "picture" : "./assets/plants/plant_brombeere.png",
+            "picture": "./assets/plants/plant_brombeere.png",
             "info": "Blattstiele bleiben oft stehen <br> Zweige grün bis dunkelrot <br>Zweige mit kräftigen, gebogenen Stacheln"
-
         },
         {
             "name": "Himbeere",
@@ -18,7 +17,7 @@
                 "Keine Kätzchen",
                 "Dornen"
             ],
-            "picture" : "./assets/plants/plant_himbeere.png",
+            "picture": "./assets/plants/plant_himbeere.png",
             "info": "Blattstiele fehlen <br> Zweige grau bis ockerfarben <br>Zweige mit feinen gerade Dornen"
         },
         {
@@ -28,8 +27,485 @@
                 "Keine Kätzchen",
                 "Stacheln"
             ],
-            "picture" : "./assets/plants/plant_rose.png",
+            "picture": "./assets/plants/plant_rose.png",
             "info": "Blattnarben schmal und breit.<br>Blätter vollständig fehlend."
+        },
+        {
+            "name": "Schwarz-Erle",
+            "answers": [
+                "Baum",
+                "Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "gestielt",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_schwarzerle.png",
+            "info": "Zweige kahl.<br>alte Borke schwärzlich und längsrissig btw. grob schuppig."
+        },
+        {
+            "name": "Grau-Erle",
+            "answers": [
+                "Baum",
+                "Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "gestielt",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_grauerle.png",
+            "info": "Zweige behaart.<br>alte Borke hellgrau und glatt."
+        },
+        {
+            "name": "Moor-Birke",
+            "answers": [
+                "Baum",
+                "Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "sitzend",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_moorbirke.png",
+            "info": "jüngste Triebe behaart und glatt."
+        },
+        {
+            "name": "Sand-Birke",
+            "answers": [
+                "Baum",
+                "Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "sitzend",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_sandbirke.png",
+            "info": "jüngste Triebe nicht behaart, warzig und glatt."
+        },
+        {
+            "name": "Baumhasel",
+            "answers": [
+                "Baum",
+                "Kätzchen",
+                "Keine Stacheln/Dornen",
+                "zweizeilig",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_baumhasel.png"
+        },
+        {
+            "name": "Haselnuss",
+            "answers": [
+                "Strauch",
+                "Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_haselnuss.png"
+        },
+        {
+            "name": "Robinie",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Dornen"
+            ],
+            "picture": "./assets/plants/plant_robinie.png"
+        },
+        {
+            "name": "Weiden",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "zweizeilig",
+                "",
+                "sitzend",
+                "",
+                "1 Schuppe|2 Schuppen"
+            ],
+            "picture": "./assets/plants/plant_weiden.png",
+            "info": "lang oval, zugespitzt"
+        },
+        {
+            "name": "Platane",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "zweizeilig",
+                "",
+                "sitzend",
+                "",
+                "1 Schuppe|2 Schuppen"
+            ],
+            "picture": "./assets/plants/plant_platane.png",
+            "info": "stumpf kegelförmig"
+        },
+        {
+            "name": "Gemeine Esche",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "",
+                "",
+                "schwarz"
+            ],
+            "picture": "./assets/plants/plant_gemeine_esche.png",
+            "info": "Endknospe deutlich größer als Seitenknospen <br> Blattnarbe groß halbkreis- bis herzförmig"
+        },
+        {
+            "name": "Feld-Ahorn",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "",
+                "",
+                "rot"
+            ],
+            "picture": "./assets/plants/plant_feldahorn.png",
+            "info": "Knospenschuppen am Rand behaart <br>Zweige oft mit Korkleisten"
+        },
+        {
+            "name": "Spitz-Ahorn",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "",
+                "",
+                "braun"
+            ],
+            "picture": "./assets/plants/plant_spitzahorn.png",
+            "info": "Knospenschuppen nicht behaart <br>Zweige ohne Korkleisten"
+        },
+        {
+            "name": "Berg-Ahorn",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "",
+                "",
+                "grün"
+            ],
+            "picture": "./assets/plants/plant_bergahorn.png"
+        },
+        {
+            "name": "Ross-Kastanie",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "",
+                "",
+                "braun"
+            ],
+            "picture": "./assets/plants/plant_rosskastanie.png",
+            "info": "Knospen sehr groß, klebrig"
+        },
+        {
+            "name": "Rotbuche",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "zweizeilig",
+                "",
+                "",
+                "",
+                "mehr Schuppen",
+                ""
+            ],
+            "picture": "./assets/plants/plant_rotbuche.png",
+            "info": "Knospen spindelförmig <br>Knospen lang und abstehend"
+        },
+        {
+            "name": "Hainbuche",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "zweizeilig",
+                "",
+                "",
+                "",
+                "mehr Schuppen",
+                ""
+            ],
+            "picture": "./assets/plants/plant_hainbuche.png",
+            "info": "Knospen spindelförmig <br>Knospen anliegend, einwärts gekrümmt"
+        },
+        {
+            "name": "Ulme",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "zweizeilig",
+                "",
+                "",
+                "",
+                "mehr Schuppen",
+                ""
+            ],
+            "picture": "./assets/plants/plant_ulme.png",
+            "info": "Knospen spitzkegelförmig <br>Knospen schief über der Blattnarbe sitzend"
+        },
+        {
+            "name": "Linde",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "zweizeilig",
+                "",
+                "",
+                "",
+                "2 Schuppen|3 Schuppen",
+                ""
+            ],
+            "picture": "./assets/plants/plant_linde.png",
+            "info": "äußere Schuppen deutlich verschieden groß"
+        },
+        {
+            "name": "Ess-Kastanie",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "zweizeilig",
+                "",
+                "",
+                "",
+                "2 Schuppen|3 Schuppen",
+                ""
+            ],
+            "picture": "./assets/plants/plant_esskastanie.png",
+            "info": "äußere Schuppen etwa gleich groß"
+        },
+        {
+            "name": "Eiche",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "sitzend",
+                "",
+                "mehr Schuppen",
+                ""
+            ],
+            "picture": "./assets/plants/plant_eiche.png",
+            "info": "Knospen am Ende gehäuft"
+        },
+        {
+            "name": "Eberesche",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "sitzend",
+                "0,5-1cm|1-2cm",
+                "mehr Schuppen",
+                "schwarzviolett"
+            ],
+            "picture": "./assets/plants/plant_eberesche.png",
+            "info": "Knospen auffällig filzig behaart"
+        },
+        {
+            "name": "Silberpappel",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "sitzend",
+                "<0,5|0,5-1cm",
+                "mehr Schuppen",
+                "weiß"
+            ],
+            "picture": "./assets/plants/plant_silberpappel.png",
+            "info": "Knospen auffällig filzig behaart"
+        },
+        {
+            "name": "Schwarzpappel",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "sitzend",
+                "",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_schwarzpappel.png",
+            "info": "Knospen nicht filzig behaart<br>Seitenknospen abstehend"
+        },
+        {
+            "name": "Zitterpappel",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "sitzend",
+                "",
+                "",
+                "braun"
+            ],
+            "picture": "./assets/plants/plant_zitterpappel.png",
+            "info": "Knospen nicht filzig behaart<br>Seitenknospen anliegend<br>Knospenschuppen glänzend <br>Rinde weißlich bis graubraun"
+        },
+        {
+            "name": "Traubenkirsche",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "sitzend",
+                "",
+                "",
+                "braun"
+            ],
+            "picture": "./assets/plants/plant_traubenkirsche.png",
+            "info": "Knospen nicht filzig behaart<br>Seitenknospen anliegend<br>Knospenschuppen glänzend <br>Rinde braunrot"
+        },
+        {
+            "name": "Walnuss",
+            "answers": [
+                "Baum",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "schraubig",
+                "",
+                "sitzend",
+                "",
+                "",
+                "schwarz"
+            ],
+            "picture": "./assets/plants/plant_walnuss.png",
+            "info": "Knospen nicht filzig behaart<br>Seitenknospen anliegend"
+        },
+        {
+            "name": "Kreuzdorn",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Dornen",
+                "gegenständig",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_kreuzdorn.png"
+        },
+        {
+            "name": "Berberitze",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Dornen",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_berberitze.png",
+            "info": "Knospen und Zweige wechselständig<br>Knospen in den Achseln von Dornen<br>Knospen von Dornbasis umhüllt"
+        },
+        {
+            "name": "Stachelbeere",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Dornen",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_stachelbeere.png",
+            "info": "Knospen und Zweige wechselständig<br>Knospen in den Achseln von Dornen<br>Knospen frei in der Achsel von Dornen"
+        },
+        {
+            "name": "Schlehe",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Dornen",
+                "",
+                "",
+                "",
+                "<0,5",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_schlehe.png",
+            "info": "Knospen und Zweige wechselständig<br>Knospen nicht in den Achseln von Dornen<br>Knospen stark büschelig gehäuft<br>halbkugelig<br>Rinde schwärzlich"
+        },
+        {
+            "name": "Weißdorn",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Dornen",
+                "",
+                "",
+                "",
+                "<0,5",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_weissdorn.png",
+            "info": "Knospen und Zweige wechselständig<br>Knospen nicht in den Achseln von Dornen<br>Knospen stark büschelig gehäuft<br>kugelig bis eiförmig<br>Rinde weißgrau"
         }
     ]
 }

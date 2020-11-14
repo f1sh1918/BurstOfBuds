@@ -75,7 +75,6 @@
                     "text": "haben Beiknospen",
                     "picture": "./assets/fragen/5_knospen_einzeln.png"
                 }
-
             ]
         },
         {
@@ -89,7 +88,6 @@
                     "text": "gestielt",
                     "picture": "./assets/fragen/6_knospen_gestielt.png"
                 }
-
             ]
         },
         {
@@ -107,7 +105,6 @@
                 {
                     "text": ">2cm"
                 }
-
             ]
         },
         {
@@ -132,6 +129,29 @@
                 {
                     "text": "mehr Schuppen",
                     "picture": "./assets/fragen/8_schuppen_mehr.png"
+                }
+            ]
+        },
+        {
+            "question": "Welche Farbe haben die Knospen:",
+            "answers": [
+                {
+                    "text": "schwarz"
+                },
+                {
+                    "text": "rot"
+                },
+                {
+                    "text": "braun"
+                },
+                {
+                    "text": "grün"
+                },
+                {
+                    "text": "schwarzviolett"
+                },
+                {
+                    "text": "weiß"
                 }
             ]
         }
