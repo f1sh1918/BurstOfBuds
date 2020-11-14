@@ -2,7 +2,10 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 import { Quiz } from "./components/quiz";
+import { SCard } from "./components/quiz/card";
+import { ResultCard } from "./components/results/resultCard";
 import quizData from "./data/questions.json";
+import plantData from "./data/plants.json";
 
 interface IAppProps {
 }
@@ -11,6 +14,7 @@ interface IAppState {
     activeQuestion: number;
     questions: any[];
     showResult: boolean;
+    results: any[];
 }
 
 class App extends React.Component<IAppProps, IAppState> {
@@ -20,7 +24,8 @@ class App extends React.Component<IAppProps, IAppState> {
         this.state = {
             activeQuestion: 0,
             questions: quizData.questions,
-            showResult: false
+            showResult: false,
+            results: plantData.plants
         };
     }
 
@@ -36,11 +41,26 @@ class App extends React.Component<IAppProps, IAppState> {
 
     showResult = (): void => {
         this.setState({ showResult: true });
+        this.checkResult();
+    };
+
+    checkResult = (): void => {
+        const plantsFiltered = this.state.results.map((plant: any) => {
+            let count = 0;
+            console.log(plant);
+            plant.answers.forEach((answer: any, index: number) => {
+                if (answer === this.state.questions[index].answer) {
+                    count = count + 1;
+                }
+            });
+            return { ...plant, percent: Math.round((count / plant.answers.length) * 100) / 100 };
+        }).sort((a, b) => b.percent - a.percent);
+
+        this.setState({ results: plantsFiltered });
     };
 
     public render() {
         const { activeQuestion, questions, showResult } = this.state;
-        console.log("questions", questions);
         return (
             <div className="App">
                 <Container>
@@ -61,11 +81,29 @@ class App extends React.Component<IAppProps, IAppState> {
                                 saveAnswer={this.saveAnswer}
                                 showResult={this.showResult}
                             /> :
-                            <div>
-                                <strong>Zusammenfassung:</strong>
-                                {questions.map((question, index) => {
-                                    return <div><strong>{index + 1}:</strong> {question.answer}</div>;
-                            })}</div>}
+                            <>
+                                <div>
+                                    <strong>Zusammenfassung:</strong>
+                                    {questions.map((question, index) => {
+                                        return <div><strong>{index + 1}:</strong> {question.answer}</div>;
+                                    })}
+                                </div>
+                                <div className={"Results mt-2"}>
+                                    <div><strong>Ergebnisse:</strong></div>
+                                    <div className={"SCard__Wrapper"}>
+
+                                        {this.state.results.map((result: any) => {
+                                            return <ResultCard
+                                                picture={result.picture}
+                                                name={result.name}
+                                                percent={result.percent}
+                                                info={result.info}
+                                            />;
+                                        })}</div>
+                                </div>
+                            </>
+                        }
+
 
                     </main>
                 </Container>

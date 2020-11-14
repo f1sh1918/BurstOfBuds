@@ -30,7 +30,11 @@
             "question": "Mein Gehölz hat:",
             "answers": [
                 {
-                    "text": "Stacheln/Dornen",
+                    "text": "Stacheln",
+                    "picture": "./assets/fragen/3_dornen.png"
+                },
+                {
+                    "text": "Dornen",
                     "picture": "./assets/fragen/3_dornen.png"
                 },
                 {

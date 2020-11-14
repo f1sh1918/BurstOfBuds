@@ -1,0 +1,35 @@
+{
+    "plants": [
+        {
+            "name": "Brombeere",
+            "answers": [
+                    "Strauch",
+                "Keine Kätzchen",
+                "Stacheln"
+            ],
+            "picture" : "./assets/plants/plant_brombeere.png",
+            "info": "Blattstiele bleiben oft stehen <br> Zweige grün bis dunkelrot <br>Zweige mit kräftigen, gebogenen Stacheln"
+
+        },
+        {
+            "name": "Himbeere",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Dornen"
+            ],
+            "picture" : "./assets/plants/plant_himbeere.png",
+            "info": "Blattstiele fehlen <br> Zweige grau bis ockerfarben <br>Zweige mit feinen gerade Dornen"
+        },
+        {
+            "name": "Rose",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Stacheln"
+            ],
+            "picture" : "./assets/plants/plant_rose.png",
+            "info": "Blattnarben schmal und breit.<br>Blätter vollständig fehlend."
+        }
+    ]
+}
