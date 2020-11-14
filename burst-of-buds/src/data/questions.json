@@ -1,23 +1,62 @@
 {
     "questions": [
         {
+            "question": "Mein Gehölz ist ein:",
+            "answers": [
+                {
+                    "text": "Baum",
+                    "picture": "./assets/fragen/1_baum.png"
+                },
+                {
+                    "text": "Strauch",
+                    "picture": "./assets/fragen/1_strauch.png"
+                }
+            ]
+        },
+        {
+            "question": "Mein Gehölz hat:",
+            "answers": [
+                {
+                    "text": "Kätzchen",
+                    "picture": "./assets/fragen/2_kaetzchen.png"
+                },
+                {
+                    "text": "Keine Kätzchen",
+                    "picture": "./assets/fragen/2_keine_kaetzchen.png"
+                }
+            ]
+        },
+        {
+            "question": "Mein Gehölz hat:",
+            "answers": [
+                {
+                    "text": "Stacheln/Dornen",
+                    "picture": "./assets/fragen/3_dornen.png"
+                },
+                {
+                    "text": "Keine Stacheln/Dornen",
+                    "picture": "./assets/fragen/3_keine_dornen.png"
+                }
+            ]
+        },
+        {
             "question": "Die Knospen und Zweige sind:",
             "answers": [
                 {
                     "text": "gegenständig",
-                    "picture": "./assets/frage1/knospe_gegen.png"
+                    "picture": "./assets/fragen/4_knospe_gegen.png"
                 },
                 {
                     "text": "kreuzgegenständig",
-                    "picture": "./assets/frage1/knospe_kreuzgegen.png"
+                    "picture": "./assets/fragen/4_knospe_kreuzgegen.png"
                 },
                 {
                     "text": "schraubig",
-                    "picture": "./assets/frage1/knospe_schraubig.png"
+                    "picture": "./assets/fragen/4_knospe_schraubig.png"
                 },
                 {
                     "text": "zweizeilig",
-                    "picture": "./assets/frage1/knospe_zweizeilig.png"
+                    "picture": "./assets/fragen/4_knospe_zweizeilig.png"
                 }
             ]
         },
@@ -26,11 +65,69 @@
             "answers": [
                 {
                     "text": "stehen einzeln",
-                    "picture": "./assets/frage1/knospe_gegen.png"
+                    "picture": "./assets/fragen/5_knospen_beiknospen.png"
                 },
                 {
                     "text": "haben Beiknospen",
-                    "picture": "./assets/frage1/knospe_kreuzgegen.png"
+                    "picture": "./assets/fragen/5_knospen_einzeln.png"
+                }
+
+            ]
+        },
+        {
+            "question": "Die Knospen sind:",
+            "answers": [
+                {
+                    "text": "sitzend",
+                    "picture": "./assets/fragen/6_knospen_sitzend.png"
+                },
+                {
+                    "text": "gestielt",
+                    "picture": "./assets/fragen/6_knospen_gestielt.png"
+                }
+
+            ]
+        },
+        {
+            "question": "Die Knospen sind:",
+            "answers": [
+                {
+                    "text": "<0,5"
+                },
+                {
+                    "text": "0,5-1cm"
+                },
+                {
+                    "text": "1-2cm"
+                },
+                {
+                    "text": ">2cm"
+                }
+
+            ]
+        },
+        {
+            "question": "Die Knospen besitzen:",
+            "answers": [
+                {
+                    "text": "keine Schuppen",
+                    "picture": "./assets/fragen/8_schuppen_keine.png"
+                },
+                {
+                    "text": "1 Schuppe",
+                    "picture": "./assets/fragen/8_schuppen_eine.png"
+                },
+                {
+                    "text": "2 Schuppen",
+                    "picture": "./assets/fragen/8_schuppen_zwei.png"
+                },
+                {
+                    "text": "3 Schuppen",
+                    "picture": "./assets/fragen/8_schuppen_drei.png"
+                },
+                {
+                    "text": "mehr Schuppen",
+                    "picture": "./assets/fragen/8_schuppen_mehr.png"
                 }
             ]
         }
