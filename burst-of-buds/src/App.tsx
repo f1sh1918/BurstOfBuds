@@ -53,7 +53,6 @@ class App extends React.Component<IAppProps, IAppState> {
                     matches.push(answer);
                 }
             });
-            console.log(plant.name,":",Math.round((matches.length / plant.answers.filter((el: string) => el !== "").length) * 100) / 100)
             return {
                 ...plant,
                 percent: Math.round((matches.length / plant.answers.filter((el: string) => el !== "").length) * 100) / 100,
