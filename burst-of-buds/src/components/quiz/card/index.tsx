@@ -10,6 +10,7 @@ interface ISCardProps {
     hasNext:boolean;
     isActive: boolean;
     showResult:()=>void;
+    color?:string;
 }
 
 export const SCard:React.FunctionComponent<ISCardProps> = (props) => {
@@ -19,10 +20,10 @@ export const SCard:React.FunctionComponent<ISCardProps> = (props) => {
     }
 
     return (
-        <Card className={props.isActive ? "SCard active pointer": "SCard pointer"} onClick={()=>{chooseAnswer()}}>
+        <Card className={props.isActive ? "SCard active pointer": "SCard pointer"} style={{backgroundColor: `${props.color}`,minHeight:`3rem`}} onClick={()=>{chooseAnswer()}}>
             {props.picture && <Card.Img className={"SCard__Image p-2"}variant="top" src={props.picture} />}
             <Card.Body className={"p-2"}>
-                <Card.Title>{props.text}</Card.Title>
+                {!props.color && <Card.Title>{props.text}</Card.Title>}
             </Card.Body>
         </Card>
     );

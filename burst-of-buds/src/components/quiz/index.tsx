@@ -20,6 +20,7 @@ export const Quiz: React.FunctionComponent<IQuizProps> = (props) => {
                 {props.questions[props.currentQuestion].answers.map((element: any, index: number) => {
                     return <SCard
                         key={element.text}
+                        color={element?.color}
                         hasNext={props.questions.length - 1 > props.currentQuestion}
                         isActive={element.text === props.questions[props.currentQuestion]?.answer}
                         picture={element?.picture}

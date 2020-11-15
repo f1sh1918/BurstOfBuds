@@ -550,7 +550,7 @@
             "answers": [
                 "Strauch",
                 "Keine Kätzchen",
-                "Dornen",
+                "Keine Stacheln/Dornen",
                 "schraubig",
                 "",
                 "",
@@ -561,6 +561,142 @@
             ],
             "picture": "./assets/plants/plant_gemeiner_schneeball.png",
             "info": "Alle Knospen gleich, rötlich glänzend"
+        },
+        {
+            "name": "Seidelbast",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "",
+                "",
+                "",
+                "",
+                "mehr Schuppen",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_seidelbast.png",
+            "info": "Endknospe und Blütenknospen größer als seitliche Blattknospen<br>Blütenknospen am Zweigende gehäuft<br>kleiner Strauch bis maximal 1m Höhe"
+        },
+        {
+            "name": "Johannisbeeren",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "",
+                "",
+                "",
+                "",
+                "mehr Schuppen",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_johannisbeeren.png",
+            "info": "alle Knospen mehr oder weniger gleichgestalten<br>Knospen nicht gehäuft am Zweigende<br>größere Sträucher"
+        },
+        {
+            "name": "Wolliger Schneeball",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "",
+                "",
+                "",
+                "",
+                "keine Schuppen",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_wolliger_schneeball.png",
+            "info": "Knospen stark weißfilzartig behaart"
+        },
+        {
+            "name": "Weißer Hartriegel",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "",
+                "",
+                "",
+                "",
+                "keine Schuppen",
+                "",
+                "rot"
+            ],
+            "picture": "./assets/plants/plant_weisser_hartriegel.png",
+            "info": "Knospen schwach braunfilzig behaart<br>Zweige allseitig kräftig rot gefärbt"
+        },
+        {
+            "name": "Roter Hartriegel",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "",
+                "",
+                "",
+                "",
+                "keine Schuppen",
+                "",
+                "rot|grün"
+            ],
+            "picture": "./assets/plants/plant_roter_hartriegel.png",
+            "info": "Knospen schwach braunfilzig behaart<br>Zweige nur an der Licht zugewandten Seite schwach rot gefärbt, Schattenseite grünlich"
+        },
+        {
+            "name": "Liguster",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "<0,5",
+                "mehr Schuppen",
+                "grün|violett|braun",
+                ""
+            ],
+            "picture": "./assets/plants/plant_liguster.png",
+            "info": "Stängel mit weißem Mark<br>Blätter und schwarze Beeren lange bleibend"
+        },
+        {
+            "name": "Schneebeere",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "<0,5",
+                "mehr Schuppen",
+                "braun",
+                ""
+            ],
+            "picture": "./assets/plants/plant_schneebeere.png",
+            "info": "Stängel hohl<br>Weiße Beeren lange bleibend<br>Knallerbsen-Strauch"
+        },
+        {
+            "name": "Pfaffenhütchen",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "<0,5",
+                "mehr Schuppen",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_pfaffenhuetchen.png",
+            "info": "ältere Zweige durch Korkleisten 4-kantig geflügelt"
         }
     ]
 }

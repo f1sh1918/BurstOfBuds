@@ -46,19 +46,20 @@ class App extends React.Component<IAppProps, IAppState> {
 
     checkResult = (): void => {
         const plantsFiltered = this.state.results.map((plant: any) => {
-            let count = 0;
+            const matches: any[] = [];
             plant.answers.forEach((answer: any, index: number) => {
-                const multiple = answer.includes("|") ? answer.split("|", 2) : null;
+                const multiple = answer.includes("|") ? answer.split("|", 3) : null;
                 if (answer === this.state.questions[index].answer || (multiple?.includes(this.state.questions[index].answer))) {
-                    count = count + 1;
+                    matches.push(answer);
                 }
             });
+            console.log(plant.name,":",Math.round((matches.length / plant.answers.filter((el: string) => el !== "").length) * 100) / 100)
             return {
                 ...plant,
-                percent: Math.round((count / plant.answers.filter((el: string) => el !== "").length) * 100) / 100,
-                count: count
+                percent: Math.round((matches.length / plant.answers.filter((el: string) => el !== "").length) * 100) / 100,
+                matches: matches
             };
-        }).sort((a, b) => b.count - a.count).sort((a, b) => b.percent - a.percent);
+        }).sort((a, b) => b.matches.length - a.matches.length).sort((a, b) => b.percent - a.percent);
 
         this.setState({ results: plantsFiltered });
     };
@@ -98,7 +99,7 @@ class App extends React.Component<IAppProps, IAppState> {
                                 <div>
                                     <strong>Zusammenfassung:</strong>
                                     {questions.map((question, index) => {
-                                        return <div><strong>{index + 1}:</strong> {question.answer}</div>;
+                                        return <div><strong>{`${index + 1}.${question.question} `}</strong>{question.answer}</div>;
                                     })}
                                 </div>
                                 <div className={"Results mt-2"}>
@@ -110,7 +111,7 @@ class App extends React.Component<IAppProps, IAppState> {
                                                 picture={result.picture}
                                                 name={result.name}
                                                 percent={result.percent}
-                                                count={result.count}
+                                                matches={result.matches}
                                                 info={result?.info}
                                             />;
                                         })}</div>

@@ -136,22 +136,28 @@
             "question": "Welche Farbe haben die Knospen:",
             "answers": [
                 {
-                    "text": "schwarz"
+                    "text": "schwarz",
+                    "color" : "black"
                 },
                 {
-                    "text": "rot"
+                    "text": "rot",
+                    "color" : "#b3221b"
                 },
                 {
-                    "text": "braun"
+                    "text": "braun",
+                    "color" : "brown"
                 },
                 {
-                    "text": "grün"
+                    "text": "grün",
+                    "color" : "green"
                 },
                 {
-                    "text": "schwarzviolett"
+                    "text": "violett",
+                    "color": "#DDA0DD"
                 },
                 {
-                    "text": "weiß"
+                    "text": "weiß",
+                    "color": "white"
                 }
             ]
         },
@@ -159,19 +165,28 @@
             "question": "Welche Farbe hat die Rinde:",
             "answers": [
                 {
-                    "text": "schwarz"
+                    "text": "schwarz",
+                    "color" : "black"
                 },
                 {
-                    "text": "weiß"
+                    "text": "weiß",
+                    "color": "white"
                 },
                 {
-                    "text": "grau"
+                    "text": "grau",
+                    "color": "gray"
                 },
                 {
-                    "text": "braun"
+                    "text": "braun",
+                    "color" : "brown"
                 },
                 {
-                    "text": "rot"
+                    "text": "rot",
+                    "color" : "#b3221b"
+                },
+                {
+                    "text": "grün",
+                    "color" : "green"
                 }
             ]
         }

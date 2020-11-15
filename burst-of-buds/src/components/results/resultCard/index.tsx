@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card, Modal, Image } from "react-bootstrap";
+import { Card, Modal, Image, OverlayTrigger, Popover } from "react-bootstrap";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
@@ -9,12 +9,13 @@ interface IResultCardProps {
     picture: string;
     percent: number;
     info?: any;
-    count: number;
+    matches: any[];
 }
 
 export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => {
     console.log("percent", props.percent);
     const [showModal, setShowModal] = useState(false);
+    const count = props.matches.length;
 
     const getColor =(percent:number):string =>{
         switch(true){
@@ -27,6 +28,16 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
         }
 
     }
+    const popover = (
+        <Popover id="popover-basic">
+            <Popover.Title as="h3">{count} Matches</Popover.Title>
+            <Popover.Content>
+                {props.matches.map((match:any)=>{
+                    return <div>{match}</div>
+                })}
+            </Popover.Content>
+        </Popover>
+    );
 
     const card = (
         <Card className={"SCard pointer"} onClick={() => setShowModal(true)}>
@@ -34,8 +45,8 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
             <Card.Body className={"p-2"}>
                 <Card.Title>{props.name}</Card.Title>
                 <div className={"CircularProgressbar__Wrapper"}>
-
-                   <div> <CircularProgressbar value={props.percent} maxValue={1} text={`${props.percent * 100}%`} styles={buildStyles({
+                    <OverlayTrigger trigger={["hover", "focus"]} placement="right" overlay={popover}>
+                   <div> <CircularProgressbar value={props.percent} maxValue={1} text={`${Math.round(props.percent * 100)}%`} styles={buildStyles({
                         // Rotation of path and trail, in number of turns (0-1)
                         rotation: 0.25,
 
@@ -57,7 +68,7 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
                         trailColor: "#d6d6d6",
                         backgroundColor: "#3e98c7",
                     })} /></div>
-                    <div>{props.count}</div>
+                    </OverlayTrigger>
                 </div>
             </Card.Body>
         </Card>
