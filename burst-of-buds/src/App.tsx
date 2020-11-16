@@ -81,7 +81,7 @@ class App extends React.Component<IAppProps, IAppState> {
                             <span><IoMdRefresh className={"Header__Icon-Restart"} onClick={() => this.restart()} /></span>
                             <span>Burst of Buds</span>
                             <span className={"Header__Question py-2"}>
-                                {`Frage: ${activeQuestion + 1}/${questions.length}`}
+                                {`${activeQuestion + 1}/${questions.length}`}
                             </span>
                         </div>
 

@@ -697,6 +697,40 @@
             ],
             "picture": "./assets/plants/plant_pfaffenhuetchen.png",
             "info": "ältere Zweige durch Korkleisten 4-kantig geflügelt"
+        },
+        {
+            "name": "Flieder",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "",
+                "",
+                "0,5-1cm|1-2cm|>2cm",
+                "",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_flieder.png",
+            "info": "mit zwei Endknospen"
+        },
+        {
+            "name": "Rote Heckenkirsche",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "haben Beiknospen",
+                "",
+                "0,5-1cm|1-2cm|>2cm",
+                "",
+                "",
+                "grau|braun"
+            ],
+            "picture": "./assets/plants/plant_rote_heckenkirsche.png",
+            "info": "Knospen zottig grau behaart <br>Knospen fast rechtwinklig abstehend<br>Zweige längsrissig<br>Zweige graunbraun"
         }
     ]
 }
