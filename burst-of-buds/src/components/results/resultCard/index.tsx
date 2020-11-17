@@ -10,6 +10,7 @@ interface IResultCardProps {
     percent: number;
     info?: any;
     matches: any[];
+    noMatches: any[];
 }
 
 export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => {
@@ -49,7 +50,7 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
             <Card.Body className={"p-2"}>
                 <Card.Title>{props.name}</Card.Title>
                 <div className={"CircularProgressbar__Wrapper"}>
-                    <OverlayTrigger trigger={["hover", "focus"]} placement="right" overlay={popover}>
+                    <OverlayTrigger trigger={["hover"]} placement="right" overlay={popover}>
                         <div>
                             <CircularProgressbar value={props.percent} maxValue={1} text={`${Math.round(props.percent * 100)}%`} styles={buildStyles({
                                 // Rotation of path and trail, in number of turns (0-1)
@@ -86,15 +87,32 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
             </Modal.Header>
             <Modal.Body>
                 <Image className="w-100 ResultCard__Image" src={props.picture} rounded />
-                {props.info && <div className={"ResultCard__Merkmale"}>
-                    <div className={"ResultCard__Merkmale-Header text-center"}>
-                        <strong> Merkmale: </strong>
-                    </div>
 
-                    <p className={"text-center"} dangerouslySetInnerHTML={{ __html: props.info }} />
-
-                </div>}
             </Modal.Body>
+            <Modal.Footer>
+                <div className={"ResultCard__MerkmaleWrapper p-2"}>
+                    <div className={"ResultCard__Merkmale text-center"}>
+                        <strong>Merkmale:</strong>
+                        {props.matches && props.matches.map((match: any, index: number) => {
+                            return <div className={"ResultCard__Match"} key={`${match}_${index}`}>{match}</div>;
+                        })}
+                        {props.noMatches && props.noMatches.map((noMatch: any, index: number) => {
+                            if (noMatch.length) {
+                                return <div className={"ResultCard__NoMatch"} key={`${noMatch}_${index}`}>{noMatch}</div>;
+                            }
+                            return null;
+                        })}
+                    </div>
+                    {props.info && <div className={"ResultCard__WeitereMerkmale"}>
+                        <div className={"ResultCard__Merkmale-Header text-center"}>
+                            <strong>Weitere Merkmale: </strong>
+                        </div>
+
+                        <p className={"text-center"} dangerouslySetInnerHTML={{ __html: props.info }} />
+
+                    </div>}
+                </div>
+            </Modal.Footer>
         </Modal>
     );
     return (

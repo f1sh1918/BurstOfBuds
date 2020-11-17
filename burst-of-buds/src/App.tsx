@@ -4,6 +4,7 @@ import { IoMdRefresh } from "react-icons/io";
 
 import { Quiz } from "./components/quiz";
 import { ResultCard } from "./components/results/resultCard";
+import { Summary } from "./components/results/summary";
 import quizData from "./data/questions.json";
 import plantData from "./data/plants.json";
 
@@ -47,16 +48,21 @@ class App extends React.Component<IAppProps, IAppState> {
     checkResult = (): void => {
         const plantsFiltered = this.state.results.map((plant: any) => {
             const matches: any[] = [];
+            const noMatches: any[] = [];
             plant.answers.forEach((answer: any, index: number) => {
                 const multiple = answer.includes("|") ? answer.split("|", 3) : null;
                 if (answer === this.state.questions[index].answer || (multiple?.includes(this.state.questions[index].answer))) {
                     matches.push(answer);
                 }
+                else{
+                    noMatches.push(answer);
+                }
             });
             return {
                 ...plant,
                 percent: Math.round((matches.length / plant.answers.filter((el: string) => el !== "").length) * 100) / 100,
-                matches: matches
+                matches: matches,
+                noMatches: noMatches
             };
         }).sort((a, b) => b.matches.length - a.matches.length).sort((a, b) => b.percent - a.percent);
 
@@ -76,13 +82,11 @@ class App extends React.Component<IAppProps, IAppState> {
         return (
             <div className="App">
                 <Container>
-                    <header className="App-header">
-                        <div className={"Header__Wrapper p-2"}>
-                            <span><IoMdRefresh className={"Header__Icon-Restart"} onClick={() => this.restart()} /></span>
-                            <span>Burst of Buds</span>
-                            <span className={"Header__Question py-2"}>
+                    <header className="App-header p-2">
+                            <div ><IoMdRefresh className={"Header__Icon-Restart"} onClick={() => this.restart()} /></div>
+                            <div >Burst of Buds</div>
+                            <div className={"Header__Question"}>
                                 {`${activeQuestion + 1}/${questions.length}`}
-                            </span>
                         </div>
 
                     </header>
@@ -96,10 +100,8 @@ class App extends React.Component<IAppProps, IAppState> {
                             /> :
                             <>
                                 <div>
-                                    <strong>Zusammenfassung:</strong>
-                                    {questions.map((question, index) => {
-                                        return <div><strong>{`${index + 1}.${question.question} `}</strong>{question.answer}</div>;
-                                    })}
+                                    <Summary questions={questions}/>
+
                                 </div>
                                 <div className={"Results mt-2"}>
                                     <div><strong>Ergebnisse:</strong></div>
@@ -111,6 +113,7 @@ class App extends React.Component<IAppProps, IAppState> {
                                                 name={result.name}
                                                 percent={result.percent}
                                                 matches={result.matches}
+                                                noMatches={result.noMatches}
                                                 info={result?.info}
                                             />;
                                         })}</div>

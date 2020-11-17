@@ -7,7 +7,7 @@
                 "Keine Kätzchen",
                 "Stacheln"
             ],
-            "picture": "./assets/plants/plant_brombeere.png",
+            "picture": "./assets/plants/plant_brombeere-min.png",
             "info": "Blattstiele bleiben oft stehen <br> Zweige grün bis dunkelrot <br>Zweige mit kräftigen, gebogenen Stacheln"
         },
         {
@@ -17,7 +17,7 @@
                 "Keine Kätzchen",
                 "Dornen"
             ],
-            "picture": "./assets/plants/plant_himbeere.png",
+            "picture": "./assets/plants/plant_himbeere-min.png",
             "info": "Blattstiele fehlen <br> Zweige grau bis ockerfarben <br>Zweige mit feinen gerade Dornen"
         },
         {
@@ -27,7 +27,7 @@
                 "Keine Kätzchen",
                 "Stacheln"
             ],
-            "picture": "./assets/plants/plant_rose.png",
+            "picture": "./assets/plants/plant_rose-min.png",
             "info": "Blattnarben schmal und breit.<br>Blätter vollständig fehlend."
         },
         {
@@ -42,7 +42,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_schwarzerle.png",
+            "picture": "./assets/plants/plant_schwarzerle-min.png",
             "info": "Zweige kahl.<br>alte Borke schwärzlich und längsrissig btw. grob schuppig."
         },
         {
@@ -57,7 +57,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_grauerle.png",
+            "picture": "./assets/plants/plant_grauerle-min.png",
             "info": "Zweige behaart.<br>alte Borke hellgrau und glatt."
         },
         {
@@ -72,7 +72,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_moorbirke.png",
+            "picture": "./assets/plants/plant_moorbirke-min.png",
             "info": "jüngste Triebe behaart und glatt."
         },
         {
@@ -87,7 +87,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_sandbirke.png",
+            "picture": "./assets/plants/plant_sandbirke-min.png",
             "info": "jüngste Triebe nicht behaart, warzig und glatt."
         },
         {
@@ -102,7 +102,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_baumhasel.png"
+            "picture": "./assets/plants/plant_baumhasel-min.png"
         },
         {
             "name": "Haselnuss",
@@ -116,7 +116,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_haselnuss.png"
+            "picture": "./assets/plants/plant_haselnuss-min.png"
         },
         {
             "name": "Robinie",
@@ -125,7 +125,7 @@
                 "Keine Kätzchen",
                 "Dornen"
             ],
-            "picture": "./assets/plants/plant_robinie.png"
+            "picture": "./assets/plants/plant_robinie-min.png"
         },
         {
             "name": "Weiden",
@@ -139,7 +139,7 @@
                 "",
                 "1 Schuppe|2 Schuppen"
             ],
-            "picture": "./assets/plants/plant_weiden.png",
+            "picture": "./assets/plants/plant_weiden-min.png",
             "info": "lang oval, zugespitzt"
         },
         {
@@ -154,7 +154,7 @@
                 "",
                 "1 Schuppe|2 Schuppen"
             ],
-            "picture": "./assets/plants/plant_platane.png",
+            "picture": "./assets/plants/plant_platane-min.png",
             "info": "stumpf kegelförmig"
         },
         {
@@ -170,7 +170,7 @@
                 "",
                 "schwarz"
             ],
-            "picture": "./assets/plants/plant_gemeine_esche.png",
+            "picture": "./assets/plants/plant_gemeine_esche-min.png",
             "info": "Endknospe deutlich größer als Seitenknospen <br> Blattnarbe groß halbkreis- bis herzförmig"
         },
         {
@@ -186,7 +186,7 @@
                 "",
                 "rot"
             ],
-            "picture": "./assets/plants/plant_feldahorn.png",
+            "picture": "./assets/plants/plant_feldahorn-min.png",
             "info": "Knospenschuppen am Rand behaart <br>Zweige oft mit Korkleisten"
         },
         {
@@ -202,7 +202,7 @@
                 "",
                 "braun"
             ],
-            "picture": "./assets/plants/plant_spitzahorn.png",
+            "picture": "./assets/plants/plant_spitzahorn-min.png",
             "info": "Knospenschuppen nicht behaart <br>Zweige ohne Korkleisten"
         },
         {
@@ -218,7 +218,7 @@
                 "",
                 "grün"
             ],
-            "picture": "./assets/plants/plant_bergahorn.png"
+            "picture": "./assets/plants/plant_bergahorn-min.png"
         },
         {
             "name": "Ross-Kastanie",
@@ -233,7 +233,7 @@
                 "",
                 "braun"
             ],
-            "picture": "./assets/plants/plant_rosskastanie.png",
+            "picture": "./assets/plants/plant_rosskastanie-min.png",
             "info": "Knospen sehr groß, klebrig"
         },
         {
@@ -249,7 +249,7 @@
                 "mehr Schuppen",
                 ""
             ],
-            "picture": "./assets/plants/plant_rotbuche.png",
+            "picture": "./assets/plants/plant_rotbuche-min.png",
             "info": "Knospen spindelförmig <br>Knospen lang und abstehend"
         },
         {
@@ -265,7 +265,7 @@
                 "mehr Schuppen",
                 ""
             ],
-            "picture": "./assets/plants/plant_hainbuche.png",
+            "picture": "./assets/plants/plant_hainbuche-min.png",
             "info": "Knospen spindelförmig <br>Knospen anliegend, einwärts gekrümmt"
         },
         {
@@ -281,7 +281,7 @@
                 "mehr Schuppen",
                 ""
             ],
-            "picture": "./assets/plants/plant_ulme.png",
+            "picture": "./assets/plants/plant_ulme-min.png",
             "info": "Knospen spitzkegelförmig <br>Knospen schief über der Blattnarbe sitzend"
         },
         {
@@ -297,7 +297,7 @@
                 "2 Schuppen|3 Schuppen",
                 ""
             ],
-            "picture": "./assets/plants/plant_linde.png",
+            "picture": "./assets/plants/plant_linde-min.png",
             "info": "äußere Schuppen deutlich verschieden groß"
         },
         {
@@ -313,7 +313,7 @@
                 "2 Schuppen|3 Schuppen",
                 ""
             ],
-            "picture": "./assets/plants/plant_esskastanie.png",
+            "picture": "./assets/plants/plant_esskastanie-min.png",
             "info": "äußere Schuppen etwa gleich groß"
         },
         {
@@ -329,7 +329,7 @@
                 "mehr Schuppen",
                 ""
             ],
-            "picture": "./assets/plants/plant_eiche.png",
+            "picture": "./assets/plants/plant_eiche-min.png",
             "info": "Knospen am Ende gehäuft"
         },
         {
@@ -345,7 +345,7 @@
                 "mehr Schuppen",
                 "schwarzviolett"
             ],
-            "picture": "./assets/plants/plant_eberesche.png",
+            "picture": "./assets/plants/plant_eberesche-min.png",
             "info": "Knospen auffällig filzig behaart"
         },
         {
@@ -361,7 +361,7 @@
                 "mehr Schuppen",
                 "weiß"
             ],
-            "picture": "./assets/plants/plant_silberpappel.png",
+            "picture": "./assets/plants/plant_silberpappel-min.png",
             "info": "Knospen auffällig filzig behaart"
         },
         {
@@ -377,7 +377,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_schwarzpappel.png",
+            "picture": "./assets/plants/plant_schwarzpappel-min.png",
             "info": "Knospen nicht filzig behaart<br>Seitenknospen abstehend"
         },
         {
@@ -394,7 +394,7 @@
                 "braun",
                 "weiß|grau|braun"
             ],
-            "picture": "./assets/plants/plant_zitterpappel.png",
+            "picture": "./assets/plants/plant_zitterpappel-min.png",
             "info": "Knospen nicht filzig behaart<br>Seitenknospen anliegend<br>Knospenschuppen glänzend <br>Rinde weißlich bis graubraun"
         },
         {
@@ -411,7 +411,7 @@
                 "braun",
                 "braun|rot"
             ],
-            "picture": "./assets/plants/plant_traubenkirsche.png",
+            "picture": "./assets/plants/plant_traubenkirsche-min.png",
             "info": "Knospen nicht filzig behaart<br>Seitenknospen anliegend<br>Knospenschuppen glänzend <br>Rinde braunrot"
         },
         {
@@ -427,7 +427,7 @@
                 "",
                 "schwarz"
             ],
-            "picture": "./assets/plants/plant_walnuss.png",
+            "picture": "./assets/plants/plant_walnuss-min.png",
             "info": "Knospen nicht filzig behaart<br>Seitenknospen anliegend"
         },
         {
@@ -443,7 +443,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_kreuzdorn.png"
+            "picture": "./assets/plants/plant_kreuzdorn-min.png"
         },
         {
             "name": "Berberitze",
@@ -458,7 +458,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_berberitze.png",
+            "picture": "./assets/plants/plant_berberitze-min.png",
             "info": "Knospen und Zweige wechselständig<br>Knospen in den Achseln von Dornen<br>Knospen von Dornbasis umhüllt"
         },
         {
@@ -474,7 +474,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_stachelbeere.png",
+            "picture": "./assets/plants/plant_stachelbeere-min.png",
             "info": "Knospen und Zweige wechselständig<br>Knospen in den Achseln von Dornen<br>Knospen frei in der Achsel von Dornen"
         },
         {
@@ -491,7 +491,7 @@
                 "",
                 "schwarz"
             ],
-            "picture": "./assets/plants/plant_schlehe.png",
+            "picture": "./assets/plants/plant_schlehe-min.png",
             "info": "Knospen und Zweige wechselständig<br>Knospen nicht in den Achseln von Dornen<br>Knospen stark büschelig gehäuft<br>halbkugelig<br>Rinde schwärzlich"
         },
         {
@@ -508,7 +508,7 @@
                 "",
                 "weiß|grau"
             ],
-            "picture": "./assets/plants/plant_weissdorn.png",
+            "picture": "./assets/plants/plant_weissdorn-min.png",
             "info": "Knospen und Zweige wechselständig<br>Knospen nicht in den Achseln von Dornen<br>Knospen stark büschelig gehäuft<br>kugelig bis eiförmig<br>Rinde weißgrau"
         },
         {
@@ -525,7 +525,7 @@
                 "gelb|braun",
                 ""
             ],
-            "picture": "./assets/plants/plant_kornelkirsche.png",
+            "picture": "./assets/plants/plant_kornelkirsche-min.png",
             "info": "Knospen unterschiedlich<br>Blattknospen: zungenförmig<br>Blütenknospen: kugelig"
         },
         {
@@ -542,7 +542,7 @@
                 "rot",
                 ""
             ],
-            "picture": "./assets/plants/plant_gemeiner_schneeball.png",
+            "picture": "./assets/plants/plant_gemeiner_schneeball-min.png",
             "info": "Alle Knospen gleich, rötlich glänzend"
         },
         {
@@ -559,7 +559,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_gemeiner_schneeball.png",
+            "picture": "./assets/plants/plant_gemeiner_schneeball-min.png",
             "info": "Alle Knospen gleich, rötlich glänzend"
         },
         {
@@ -576,7 +576,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_seidelbast.png",
+            "picture": "./assets/plants/plant_seidelbast-min.png",
             "info": "Endknospe und Blütenknospen größer als seitliche Blattknospen<br>Blütenknospen am Zweigende gehäuft<br>kleiner Strauch bis maximal 1m Höhe"
         },
         {
@@ -593,7 +593,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_johannisbeeren.png",
+            "picture": "./assets/plants/plant_johannisbeeren-min.png",
             "info": "alle Knospen mehr oder weniger gleichgestalten<br>Knospen nicht gehäuft am Zweigende<br>größere Sträucher"
         },
         {
@@ -610,7 +610,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_wolliger_schneeball.png",
+            "picture": "./assets/plants/plant_wolliger_schneeball-min.png",
             "info": "Knospen stark weißfilzartig behaart"
         },
         {
@@ -627,7 +627,7 @@
                 "",
                 "rot"
             ],
-            "picture": "./assets/plants/plant_weisser_hartriegel.png",
+            "picture": "./assets/plants/plant_weisser_hartriegel-min.png",
             "info": "Knospen schwach braunfilzig behaart<br>Zweige allseitig kräftig rot gefärbt"
         },
         {
@@ -644,7 +644,7 @@
                 "",
                 "rot|grün"
             ],
-            "picture": "./assets/plants/plant_roter_hartriegel.png",
+            "picture": "./assets/plants/plant_roter_hartriegel-min.png",
             "info": "Knospen schwach braunfilzig behaart<br>Zweige nur an der Licht zugewandten Seite schwach rot gefärbt, Schattenseite grünlich"
         },
         {
@@ -661,7 +661,7 @@
                 "grün|violett|braun",
                 ""
             ],
-            "picture": "./assets/plants/plant_liguster.png",
+            "picture": "./assets/plants/plant_liguster-min.png",
             "info": "Stängel mit weißem Mark<br>Blätter und schwarze Beeren lange bleibend"
         },
         {
@@ -678,7 +678,7 @@
                 "braun",
                 ""
             ],
-            "picture": "./assets/plants/plant_schneebeere.png",
+            "picture": "./assets/plants/plant_schneebeere-min.png",
             "info": "Stängel hohl<br>Weiße Beeren lange bleibend<br>Knallerbsen-Strauch"
         },
         {
@@ -695,7 +695,7 @@
                 "",
                 ""
             ],
-            "picture": "./assets/plants/plant_pfaffenhuetchen.png",
+            "picture": "./assets/plants/plant_pfaffenhuetchen-min.png",
             "info": "ältere Zweige durch Korkleisten 4-kantig geflügelt"
         },
         {
@@ -730,7 +730,58 @@
                 "grau|braun"
             ],
             "picture": "./assets/plants/plant_rote_heckenkirsche.png",
-            "info": "Knospen zottig grau behaart <br>Knospen fast rechtwinklig abstehend<br>Zweige längsrissig<br>Zweige graunbraun"
+            "info": "Nur eine Endknospe<br>Knospen zottig grau behaart <br>Knospen fast rechtwinklig abstehend<br>Zweige längsrissig<br>Zweige graunbraun"
+        },
+        {
+            "name": "Forsythie",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "stehen einzeln",
+                "",
+                "0,5-1cm|1-2cm|>2cm",
+                "",
+                "",
+                ""
+            ],
+            "picture": "./assets/plants/plant_forsythie.png",
+            "info": "Nur eine Endknospe<br>Knospen nicht behaart<br>Knospen in steilem Winke abstehend<br>Zweige nicht rissig<br>Zeige olivgrün"
+        },
+        {
+            "name": "Schwarzer Holunder",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "haben Beiknospen",
+                "",
+                "0,5-1cm|1-2cm|>2cm",
+                "",
+                "",
+                "grün"
+            ],
+            "picture": "./assets/plants/plant_schwarzer_holunder.png",
+            "info": "Nur eine Endknospe<br>Knospen halb geöffnet<br>Junge Blättchen sichtbar<br>Mark weiß"
+        },
+        {
+            "name": "Weißer Holunder",
+            "answers": [
+                "Strauch",
+                "Keine Kätzchen",
+                "Keine Stacheln/Dornen",
+                "gegenständig",
+                "haben Beiknospen",
+                "",
+                "0,5-1cm|1-2cm|>2cm",
+                "",
+                "",
+                "grün"
+            ],
+            "picture": "./assets/plants/plant_schwarzer_holunder.png",
+            "info": "Nur eine Endknospe<br>Knospen geschlossen<br>Mark braun"
         }
     ]
 }
