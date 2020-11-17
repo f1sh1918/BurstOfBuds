@@ -87,9 +87,6 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
             </Modal.Header>
             <Modal.Body>
                 <Image className="w-100 ResultCard__Image" src={props.picture} rounded />
-
-            </Modal.Body>
-            <Modal.Footer>
                 <div className={"ResultCard__MerkmaleWrapper p-2"}>
                     <div className={"ResultCard__Merkmale text-center"}>
                         <strong>Merkmale:</strong>
@@ -112,7 +109,7 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
 
                     </div>}
                 </div>
-            </Modal.Footer>
+            </Modal.Body>
         </Modal>
     );
     return (
