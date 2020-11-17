@@ -7,7 +7,7 @@ interface ISummaryProps {
 
 export const Summary: React.FunctionComponent<ISummaryProps> = (props) => {
     return (
-        <Accordion>
+        <Accordion className={"pointer"}>
             <Card>
                 <Accordion.Toggle as={Card.Header} eventKey="0">
                     Zusammenfassung
