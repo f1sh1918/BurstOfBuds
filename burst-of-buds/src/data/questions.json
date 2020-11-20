@@ -137,27 +137,27 @@
             "answers": [
                 {
                     "text": "schwarz",
-                    "color" : "black"
+                    "color": "black"
                 },
                 {
                     "text": "rot",
-                    "color" : "#880000"
+                    "color": "#880000"
                 },
                 {
                     "text": "braun",
-                    "color" : "brown"
+                    "color": "#47380e"
                 },
                 {
                     "text": "grün",
-                    "color" : "green"
-                },
-                {
-                    "text": "violett",
-                    "color": "#DDA0DD"
+                    "color": "green"
                 },
                 {
                     "text": "weiß",
                     "color": "white"
+                },
+                {
+                    "text": "violett",
+                    "color": "#41084f"
                 }
             ]
         },
@@ -166,7 +166,19 @@
             "answers": [
                 {
                     "text": "schwarz",
-                    "color" : "black"
+                    "color": "black"
+                },
+                {
+                    "text": "rot",
+                    "color": "#880000"
+                },
+                {
+                    "text": "braun",
+                    "color": "#47380e"
+                },
+                {
+                    "text": "grün",
+                    "color": "green"
                 },
                 {
                     "text": "weiß",
@@ -175,18 +187,6 @@
                 {
                     "text": "grau",
                     "color": "gray"
-                },
-                {
-                    "text": "braun",
-                    "color" : "brown"
-                },
-                {
-                    "text": "rot",
-                    "color" : "#880000"
-                },
-                {
-                    "text": "grün",
-                    "color" : "green"
                 }
             ]
         }

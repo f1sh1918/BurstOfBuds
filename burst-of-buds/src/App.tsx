@@ -108,7 +108,7 @@ class App extends React.Component<IAppProps, IAppState> {
                                     <div className={"SCard__Wrapper"}>
 
                                         {this.state.results.map((result: any, index: number) => {
-                                            return index < 40 && <ResultCard
+                                            return index < 50 && <ResultCard
                                                 picture={result.picture}
                                                 name={result.name}
                                                 percent={result.percent}
