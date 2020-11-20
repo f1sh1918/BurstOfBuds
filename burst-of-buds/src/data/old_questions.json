@@ -51,6 +51,10 @@
                     "picture": "./assets/fragen/4_knospe_gegen-min.png"
                 },
                 {
+                    "text": "kreuzgegenständig",
+                    "picture": "./assets/fragen/4_knospe_kreuzgegen-min.png"
+                },
+                {
                     "text": "schraubig",
                     "picture": "./assets/fragen/4_knospe_schraubig-min.png"
                 },
