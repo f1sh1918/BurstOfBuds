@@ -23,7 +23,7 @@ clientsClaim();
 // This variable must be present somewhere in your service worker file,
 // even if you decide not to use precaching. See https://cra.link/PWA
 precacheAndRoute([
-    {url: '/assets', revision: undefined}
+    {url: '/assets', revision: '1'}
 ]);
 
 const selfManifest = self.__WB_MANIFEST
