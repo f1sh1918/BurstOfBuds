@@ -1,0 +1,11 @@
+.SCarousel {
+    .carousel-indicators li{
+        background-color: black;
+    }
+
+    &__Controls {
+        color: black;
+        font-size: 2rem;
+        opacity: 0.5;
+    }
+}

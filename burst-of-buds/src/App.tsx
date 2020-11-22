@@ -115,6 +115,7 @@ class App extends React.Component<IAppProps, IAppState> {
                                                 matches={result.matches}
                                                 noMatches={result.noMatches}
                                                 info={result?.info}
+                                                images={result.images}
                                             />;
                                         })}</div>
                                 </div>

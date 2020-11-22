@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Card, Modal, Image, OverlayTrigger, Popover } from "react-bootstrap";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import { SCarousel } from "../carousel";
 
 interface IResultCardProps {
     text?: string;
@@ -11,11 +12,13 @@ interface IResultCardProps {
     info?: any;
     matches: any[];
     noMatches: any[];
+    images?: any;
 }
 
 export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => {
     const [showModal, setShowModal] = useState(false);
     const count = props.matches.length;
+    console.log("props,name",props.images);
 
     const getColor = (percent: number): string => {
         switch (true) {
@@ -86,7 +89,7 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
                 <Modal.Title>{props.name}</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <Image className="w-100 ResultCard__Image" src={props.picture} rounded />
+                {props.images ?<SCarousel images={props.images}/> :  <Image className="w-100 ResultCard__Image" src={props.picture} rounded />}
                 <div className={"ResultCard__MerkmaleWrapper p-2"}>
                     <div className={"ResultCard__Merkmale text-center"}>
                         <strong>Merkmale:</strong>

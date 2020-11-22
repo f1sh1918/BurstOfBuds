@@ -8,6 +8,16 @@
                 "Stacheln"
             ],
             "picture": "./assets/plants/plant_brombeere-min.png",
+            "images" : [
+                {
+                    "src": "./assets/plants/plant_brombeere-min.png",
+                    "alt": "test"
+                },
+                {
+                    "src": "https://www.waschbaer.de/magazin/wp-content/uploads/2019/09/brombeeren-1170x780.jpg",
+                    "alt" : "Strauch Brombeere"
+                }
+            ],
             "info": "Blattstiele bleiben oft stehen <br> Zweige grün bis dunkelrot <br>Zweige mit kräftigen, gebogenen Stacheln"
         },
         {
