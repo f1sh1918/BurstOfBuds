@@ -93,12 +93,10 @@ class App extends React.Component<IAppProps, IAppState> {
                                 </Nav>
 
                             </Navbar.Collapse>
-                            <Navbar.Brand className={"Navigigation__Brand"}>
                                 <div>Burst of Buds</div>
                                 <div className={"Header__Question"}>
                                     {`${activeQuestion + 1}/${questions.length}`}
                                 </div>
-                            </Navbar.Brand>
                         </Navbar>
 
 
