@@ -21,7 +21,6 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
     const [showModal, setShowModal] = useState(false);
     const [showCamera, setShowCamera] = useState(false);
     const count = props.matches.length;
-    console.log("localStorage", localStorage.getItem("Picture"))
 
     const getColor = (percent: number): string => {
         switch (true) {
@@ -93,7 +92,7 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
 
             </Modal.Header>
             <Modal.Body>
-                {props.images ?<SCarousel images={props.images}/> :  <Image className="w-100 ResultCard__Image" src={props.picture} rounded />}
+                {props.images.length ?<SCarousel images={props.images}/> :  <Image className="w-100 ResultCard__Image" src={props.picture} rounded />}
                 <div className={"ResultCard__MerkmaleWrapper p-2"}>
                     <div className={"ResultCard__Merkmale text-center"}>
                         <strong>Merkmale:</strong>
@@ -118,13 +117,14 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
                 </div>
             </Modal.Body>
             <Modal.Footer>
-                <IoMdCamera onClick={()=>{setShowCamera(true); setShowModal(false)}}/>
+                <IoMdCamera className={"pointer"} size={"24px"} onClick={()=>{setShowCamera(true); setShowModal(false)}}/>
             </Modal.Footer>
         </Modal>
     );
     return (
         <>
-            {showCamera && <CameraShot name={props.name}/>}
+            {showCamera &&
+            <CameraShot name={props.name} showCamera={showCamera} setShowCamera={setShowCamera}/>}
             {card}
             {modal}
         </>
