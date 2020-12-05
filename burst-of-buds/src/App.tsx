@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { IoMdRefresh } from "react-icons/io";
 
 import { Quiz } from "./components/quiz";

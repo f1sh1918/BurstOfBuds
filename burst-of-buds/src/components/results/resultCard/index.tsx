@@ -21,7 +21,7 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
     const [showModal, setShowModal] = useState(false);
     const [showCamera, setShowCamera] = useState(false);
     const count = props.matches.length;
-    console.log("props,name",props.images);
+    console.log("localStorage", localStorage.getItem("Picture"))
 
     const getColor = (percent: number): string => {
         switch (true) {
@@ -124,7 +124,7 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
     );
     return (
         <>
-            {showCamera && <CameraShot/>}
+            {showCamera && <CameraShot name={props.name}/>}
             {card}
             {modal}
         </>
