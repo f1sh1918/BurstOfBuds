@@ -83,22 +83,11 @@ class App extends React.Component<IAppProps, IAppState> {
             <div className="App">
                 <Container>
                     <header className="App-header p-2">
-                        <Navbar bg="success" expand="lg">
-
-                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                            <Navbar.Collapse id="basic-navbar-nav">
-                                <Nav className="mr-auto">
-                                    <Nav.Link onClick={() => this.restart()}>Restart</Nav.Link>
-                                    <Nav.Link href="#home">Pflanzen</Nav.Link>
-                                </Nav>
-
-                            </Navbar.Collapse>
-                                <div>Burst of Buds</div>
-                                <div className={"Header__Question"}>
-                                    {`${activeQuestion + 1}/${questions.length}`}
-                                </div>
-                        </Navbar>
-
+                            <div ><IoMdRefresh className={"Header__Icon-Restart"} onClick={() => this.restart()} /></div>
+                            <div >Burst of Buds</div>
+                            <div className={"Header__Question"}>
+                                {`${activeQuestion + 1}/${questions.length}`}
+                        </div>
 
                     </header>
                     <main>

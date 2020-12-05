@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Card, Modal, Image, OverlayTrigger, Popover } from "react-bootstrap";
 import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import { IoMdCamera} from "react-icons/io";
 import "react-circular-progressbar/dist/styles.css";
 import { SCarousel } from "../carousel";
+import CameraShot from "../photoCamera";
 
 interface IResultCardProps {
     text?: string;
@@ -17,6 +19,7 @@ interface IResultCardProps {
 
 export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => {
     const [showModal, setShowModal] = useState(false);
+    const [showCamera, setShowCamera] = useState(false);
     const count = props.matches.length;
     console.log("props,name",props.images);
 
@@ -87,6 +90,7 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
         <Modal show={showModal} onHide={() => setShowModal(false)}>
             <Modal.Header closeButton>
                 <Modal.Title>{props.name}</Modal.Title>
+
             </Modal.Header>
             <Modal.Body>
                 {props.images ?<SCarousel images={props.images}/> :  <Image className="w-100 ResultCard__Image" src={props.picture} rounded />}
@@ -113,10 +117,14 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
                     </div>}
                 </div>
             </Modal.Body>
+            <Modal.Footer>
+                <IoMdCamera onClick={()=>{setShowCamera(true); setShowModal(false)}}/>
+            </Modal.Footer>
         </Modal>
     );
     return (
         <>
+            {showCamera && <CameraShot/>}
             {card}
             {modal}
         </>

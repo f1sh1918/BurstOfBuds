@@ -11,11 +11,13 @@
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "bootstrap": "^4.5.3",
+    "image-data-uri": "^2.0.1",
     "node-sass": "~4.14.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.4.0",
     "react-circular-progressbar": "^2.0.3",
     "react-dom": "^17.0.1",
+    "react-html5-camera-photo": "^1.5.4",
     "react-icons": "^3.11.0",
     "react-scripts": "4.0.0",
     "typescript": "^4.0.3",
@@ -59,6 +61,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-html5-camera-photo": "^1.5.0",
     "json-loader": "^0.5.7"
   }
 }
