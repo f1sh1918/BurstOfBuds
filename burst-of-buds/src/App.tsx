@@ -30,7 +30,7 @@ class App extends React.Component<IAppProps, IAppState> {
             if (filteredItems.length) {
 
                 filteredItems.forEach((element: any) => {
-                    // TODO remove workaround and check why its rendered twice
+                    // TODO remove workaround and check why its rendered twice and update after saved picture
                  const index =  images.findIndex((el:any)=> el.src === element.src);
                  index === -1 && images.push(element);
                 });
