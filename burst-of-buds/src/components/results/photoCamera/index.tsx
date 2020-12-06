@@ -44,7 +44,7 @@ class CameraShot extends React.Component<ICameraShotProps, ICameraShotState> {
                             this.handleTakePhoto(dataUri);
                         }}
                         imageType={IMAGE_TYPES.JPG}
-                        imageCompression={0.6}
+                        imageCompression={0.75}
                         isFullscreen={true}
                         idealFacingMode={FACING_MODES.ENVIRONMENT}
                         isImageMirror={false}
