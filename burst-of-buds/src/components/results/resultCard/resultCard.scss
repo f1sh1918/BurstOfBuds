@@ -25,3 +25,9 @@
 .modal-body {
     overflow: auto;
 }
+
+.SCard {
+    &.discovered {
+    background-color: rgba(0, 153, 0, 0.2);
+    }
+}

@@ -24,6 +24,7 @@ class App extends React.Component<IAppProps, IAppState> {
         super(props);
         const pictureStorage: any[] = localStorage.getItem("Pictures") ? JSON.parse(localStorage.getItem("Pictures") as string) : [];
         const results = plantData.plants.map((plant: any) => {
+            let discovered = false;
             const images = plant.images ?? [];
             const filteredItems = pictureStorage.filter((element: any) => element.alt === plant.name);
 
@@ -33,10 +34,11 @@ class App extends React.Component<IAppProps, IAppState> {
                     // TODO remove workaround and check why its rendered twice and update after saved picture
                  const index =  images.findIndex((el:any)=> el.src === element.src);
                  index === -1 && images.push(element);
+                 discovered = true
                 });
 
             }
-            const newPlant = { ...plant, images: images };
+            const newPlant = { ...plant, images: images, discovered: discovered };
             return newPlant;
         });
 
@@ -139,6 +141,7 @@ class App extends React.Component<IAppProps, IAppState> {
                                                 info={result?.info}
                                                 images={result.images}
                                                 key={result.picture}
+                                                discovered={result.discovered}
                                             />;
                                         })}</div>
                                     <div className={"mt-3 pointer"}><strong>Remaining Storage:</strong> {this.getRemainingStorage()}MB</div>

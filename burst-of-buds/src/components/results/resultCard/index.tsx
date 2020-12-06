@@ -15,6 +15,7 @@ interface IResultCardProps {
     matches: any[];
     noMatches: any[];
     images?: any;
+    discovered: boolean;
 }
 
 export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => {
@@ -49,8 +50,10 @@ export const ResultCard: React.FunctionComponent<IResultCardProps> = (props) => 
         </Popover>
     );
 
+    const discoveredClass = props.discovered ? "discovered" : "";
+
     const card = (
-        <Card className={"SCard pointer"} onClick={() => setShowModal(true)}>
+        <Card className={`SCard pointer ${discoveredClass}`} onClick={() => setShowModal(true)}>
             {props.picture && <Card.Img className={"SCard__Image p-2"} variant="top" src={props.picture} />}
             <Card.Body className={"p-2"}>
                 <Card.Title>{props.name}</Card.Title>
