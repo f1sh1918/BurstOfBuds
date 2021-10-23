@@ -1,0 +1,190 @@
+{
+    "questions": [
+        {
+            "question": "Mein Gehölz ist ein:",
+            "answers": [
+                {
+                    "text": "Baum",
+                    "picture": "./assets/fragen/1_baum-min.png"
+                },
+                {
+                    "text": "Strauch",
+                    "picture": "./assets/fragen/1_strauch-min.png"
+                }
+            ]
+        },
+        {
+            "question": "Mein Gehölz hat:",
+            "answers": [
+                {
+                    "text": "Kätzchen",
+                    "picture": "./assets/fragen/2_kaetzchen-min.png"
+                },
+                {
+                    "text": "Keine Kätzchen",
+                    "picture": "./assets/fragen/2_keine_kaetzchen-min.png"
+                }
+            ]
+        },
+        {
+            "question": "Mein Gehölz hat:",
+            "answers": [
+                {
+                    "text": "Stacheln",
+                    "picture": "./assets/fragen/3_stacheln-min.png"
+                },
+                {
+                    "text": "Dornen",
+                    "picture": "./assets/fragen/3_dornen-min.png"
+                },
+                {
+                    "text": "Keine Stacheln/Dornen",
+                    "picture": "./assets/fragen/3_keine_dornen-min.png"
+                }
+            ]
+        },
+        {
+            "question": "Die Knospen und Zweige sind:",
+            "answers": [
+                {
+                    "text": "gegenständig",
+                    "picture": "./assets/fragen/4_knospe_gegen-min.png"
+                },
+                {
+                    "text": "schraubig",
+                    "picture": "./assets/fragen/4_knospe_schraubig-min.png"
+                },
+                {
+                    "text": "zweizeilig",
+                    "picture": "./assets/fragen/4_knospe_zweizeilig-min.png"
+                }
+            ]
+        },
+        {
+            "question": "Die Knospen:",
+            "answers": [
+                {
+                    "text": "stehen einzeln",
+                    "picture": "./assets/fragen/5_knospen_beiknospen-min.png"
+                },
+                {
+                    "text": "haben Beiknospen",
+                    "picture": "./assets/fragen/5_knospen_einzeln-min.png"
+                }
+            ]
+        },
+        {
+            "question": "Die Knospen sind:",
+            "answers": [
+                {
+                    "text": "sitzend",
+                    "picture": "./assets/fragen/6_knospen_sitzend-min.png"
+                },
+                {
+                    "text": "gestielt",
+                    "picture": "./assets/fragen/6_knospen_gestielt-min.png"
+                }
+            ]
+        },
+        {
+            "question": "Die Knospen sind:",
+            "answers": [
+                {
+                    "text": "<0,5"
+                },
+                {
+                    "text": "0,5-1cm"
+                },
+                {
+                    "text": "1-2cm"
+                },
+                {
+                    "text": ">2cm"
+                }
+            ]
+        },
+        {
+            "question": "Die Knospen besitzen:",
+            "answers": [
+                {
+                    "text": "keine Schuppen",
+                    "picture": "./assets/fragen/8_schuppen_keine-min.png"
+                },
+                {
+                    "text": "1 Schuppe",
+                    "picture": "./assets/fragen/8_schuppen_eine-min.png"
+                },
+                {
+                    "text": "2 Schuppen",
+                    "picture": "./assets/fragen/8_schuppen_zwei-min.png"
+                },
+                {
+                    "text": "3 Schuppen",
+                    "picture": "./assets/fragen/8_schuppen_drei-min.png"
+                },
+                {
+                    "text": "mehr Schuppen",
+                    "picture": "./assets/fragen/8_schuppen_mehr-min.png"
+                }
+            ]
+        },
+        {
+            "question": "Welche Farbe haben die Knospen:",
+            "answers": [
+                {
+                    "text": "schwarz",
+                    "color": "black"
+                },
+                {
+                    "text": "rot",
+                    "color": "#880000"
+                },
+                {
+                    "text": "braun",
+                    "color": "#47380e"
+                },
+                {
+                    "text": "grün",
+                    "color": "green"
+                },
+                {
+                    "text": "weiß",
+                    "color": "white"
+                },
+                {
+                    "text": "violett",
+                    "color": "#41084f"
+                }
+            ]
+        },
+        {
+            "question": "Welche Farbe hat die Rinde:",
+            "answers": [
+                {
+                    "text": "schwarz",
+                    "color": "black"
+                },
+                {
+                    "text": "rot",
+                    "color": "#880000"
+                },
+                {
+                    "text": "braun",
+                    "color": "#47380e"
+                },
+                {
+                    "text": "grün",
+                    "color": "green"
+                },
+                {
+                    "text": "weiß",
+                    "color": "white"
+                },
+                {
+                    "text": "grau",
+                    "color": "gray"
+                }
+            ]
+        }
+    ]
+}
